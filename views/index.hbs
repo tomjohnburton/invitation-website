@@ -1,0 +1,92 @@
+<div class="main">
+
+
+  <div class="user-form">
+    <h1>Christine & Ted's Birthday Festival</h1>
+    <h3>Hello and welcome to our interactive invitation</h3>
+    <h4>Below you will find a simple form to fill out that will let us know what we days we can expect you</h4>
+    <div class="options">
+      <div class="form">
+        <form action="/save-details" method="post">
+          <div class="name">
+            <h3>Name</h3>
+            <input class="form-control form-control" type="text" name="name" placeholder="Type here...">
+          </div>
+
+          <div class="extra">
+            <h3>How many are you bringing?</h3>
+            <div class="">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+              <select class="custom-select mr-sm-2" name="extraGuests" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="3">Four</option>
+                <option value="3">Five</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="when">
+            <h3>When are you coming?</h3>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="daysAttending" value="FriAM" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Friday AM
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="daysAttending" value="FriPM" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Friday PM
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="daysAttending" value="SatAM" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Saturday AM
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="daysAttending" value="SatPM" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Saturday PM
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="daysAttending" value="SunAM" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Sunday AM
+              </label>
+            </div>
+          </div>
+      </div>
+
+      <h3>Are you camping?</h3>
+      <div class="camping">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="camping" id="camping" value="yes" checked>
+          <label class="form-check-label" for="camping">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="camping" id="camping" value="no" checked>
+          <label class="form-check-label" for="camping">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px" class="">
+      <button type="submit" class="btn btn-success
+      ">Submit</button>
+    </div>
+    </form>
+
+  </div>
+
+</div>
+</div>

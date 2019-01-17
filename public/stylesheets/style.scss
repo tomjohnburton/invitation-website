@@ -1,0 +1,42 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/card.jpg");
+  // background-image: url("/images/House-top-view.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  color: #f4f4f4;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  margin-left: 1rem;
+  justify-content: space-between;
+
+  .user-form {
+    background-color: rgba(46, 44, 44, 0.55);
+    border-radius: 15px;
+    width: 50%;
+    padding: 50px;
+    max-height: 90%;
+    overflow: auto;
+    .options {
+      .form {
+        div {
+          padding: 5px 0;
+        }
+        .camping {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
