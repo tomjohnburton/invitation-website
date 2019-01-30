@@ -1,10 +1,10 @@
+@font-face {
+  font-family: Octarine;
+  src: url("/Octarine-Bold.otf");
+}
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  // background-image: url("/images/card.jpg");
-  background-image: url("/images/House-top-view.jpg");
-  background-size: cover;
-  object-fit: cover;
-  background-repeat: no-repeat;
+  font: 14px "Octarine";
+  font-family: Octarine;
   color: #f4f4f4;
 }
 
@@ -17,8 +17,13 @@ a {
   flex-direction: row;
   align-items: center;
   height: 100vh;
-  margin-left: 1rem;
+  padding-left: 1rem;
   justify-content: space-between;
+  background-image: url("/images/House-top-view.jpg");
+
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
 
   .user-form {
     background-color: rgba(46, 44, 44, 0.55);
@@ -35,8 +40,66 @@ a {
         .camping {
           display: flex;
           flex-direction: row;
+          .form-check {
+            margin: 10px;
+          }
         }
       }
     }
   }
+}
+
+td {
+  padding: 10px 0;
+  text-align: center;
+  p {
+    margin: 10px 40px;
+  }
+}
+
+.invitation-page {
+  height: 100vh;
+  color: red;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  // background-color: black;
+  // margin: 30px 0;
+  .text {
+    background-image: url("/images/card.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .date {
+      position: absolute;
+      top: 22%;
+      left: 24%;
+    }
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin: 0;
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    }
+    .info {
+      width: 250px;
+      position: absolute;
+      right: 10%;
+      top: 30%;
+    }
+  }
+}
+
+// Bootstrap overide
+
+.form-check-input {
+  margin-top: 0;
 }

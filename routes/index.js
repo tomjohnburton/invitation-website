@@ -3,11 +3,13 @@ const router = express.Router();
 const Guest = require("../models/Guest");
 /* GET home page */
 router.get("/", (req, res, next) => {
+  res.render("invitation");
+});
+router.get("/rsvp", (req, res, next) => {
   res.render("index");
 });
 
 router.post("/save-details", (req, res, next) => {
-  console.log(req.body);
   const { name, daysAttending, extraGuests, camping } = req.body;
   const data = { name, daysAttending, extraGuests, camping };
   Guest.create(data).then(response => {

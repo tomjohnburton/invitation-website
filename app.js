@@ -8,11 +8,9 @@ const hbs = require("hbs");
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const path = require("path");
-
 const dbUser = process.env.USERNAME.toString();
 const dbPassword = process.env.PASSWORD.toString();
 
-console.log(dbUser, dbPassword);
 mongoose
   // .connect('mongodb://localhost/a', {useNewUrlParser: true})
   .connect(

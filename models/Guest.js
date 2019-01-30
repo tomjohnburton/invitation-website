@@ -16,5 +16,5 @@ const GuestSchema = new Schema(
   }
 );
 
-const Guest = mongoose.model("UserFavorite", GuestSchema);
+const Guest = mongoose.model("GuestChoice", GuestSchema);
 module.exports = Guest;
