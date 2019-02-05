@@ -31,4 +31,10 @@ router.post("/save-details", (req, res, next) => {
     res.render("success");
   });
 });
+
+router.get("/attending", (req, res, next) => {
+  Guest.find().then(response => {
+    res.render("attending", { response });
+  });
+});
 module.exports = router;
