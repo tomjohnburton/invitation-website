@@ -32,7 +32,9 @@ a {
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
-
+  @media only screen and (max-width: 600px) {
+    padding: 0 2px;
+  }
   .user-form {
     background-color: rgba(46, 44, 44, 0.55);
     border-radius: 15px;
@@ -40,6 +42,10 @@ a {
     padding: 50px;
     max-height: 90%;
     overflow: auto;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      padding: 20px 10px;
+    }
     .options {
       .form {
         div {
@@ -73,6 +79,7 @@ td {
   font-weight: 900;
   // background-color: black;
   // margin: 30px 0;
+
   background-image: url("/images/card.jpg");
   background-size: cover;
   object-fit: cover;
@@ -91,13 +98,21 @@ td {
     .date {
       position: absolute;
       top: 22%;
+
       left: 24%;
+      @media only screen and (max-width: 600px) {
+        top: 35%;
+      }
     }
 
     h1 {
       font-size: 3rem;
       text-align: center;
       margin: 0;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.9rem;
+      }
       a {
         text-decoration: none;
         color: red;
@@ -106,10 +121,21 @@ td {
     .info {
       width: 350px;
       position: absolute;
+      text-align: center;
       right: 10%;
       top: 30%;
+      @media only screen and (max-width: 600px) {
+        top: 50%;
+
+        width: 320px;
+        font-size: 1.3rem;
+        right: auto;
+      }
       h3 {
         font-size: 2.5rem;
+        @media only screen and (max-width: 350px) {
+          font-size: 2rem;
+        }
       }
     }
   }

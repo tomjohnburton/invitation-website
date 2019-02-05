@@ -28,6 +28,9 @@ a {
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 600px) {
+    .main {
+      padding: 0 2px; } }
   .main .user-form {
     background-color: rgba(46, 44, 44, 0.55);
     border-radius: 15px;
@@ -35,6 +38,10 @@ a {
     padding: 50px;
     max-height: 90%;
     overflow: auto; }
+    @media only screen and (max-width: 600px) {
+      .main .user-form {
+        width: 100%;
+        padding: 20px 10px; } }
     .main .user-form .options .form div {
       padding: 5px 0; }
     .main .user-form .options .form .camping {
@@ -73,20 +80,36 @@ td {
       position: absolute;
       top: 22%;
       left: 24%; }
+      @media only screen and (max-width: 600px) {
+        .invitation-page .text .date {
+          top: 35%; } }
     .invitation-page .text h1 {
       font-size: 3rem;
       text-align: center;
       margin: 0; }
+      @media only screen and (max-width: 600px) {
+        .invitation-page .text h1 {
+          font-size: 1.9rem; } }
       .invitation-page .text h1 a {
         text-decoration: none;
         color: red; }
     .invitation-page .text .info {
       width: 350px;
       position: absolute;
+      text-align: center;
       right: 10%;
       top: 30%; }
+      @media only screen and (max-width: 600px) {
+        .invitation-page .text .info {
+          top: 50%;
+          width: 320px;
+          font-size: 1.3rem;
+          right: auto; } }
       .invitation-page .text .info h3 {
         font-size: 2.5rem; }
+        @media only screen and (max-width: 350px) {
+          .invitation-page .text .info h3 {
+            font-size: 2rem; } }
 
 .form-check-input {
   margin-top: 0; }
