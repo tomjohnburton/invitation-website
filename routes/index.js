@@ -17,7 +17,7 @@ router.post("/save-details", (req, res, next) => {
     adults,
     children,
     camping,
-    favouriteSong
+    favoriteSong
   } = req.body;
   const data = {
     name,
@@ -25,7 +25,7 @@ router.post("/save-details", (req, res, next) => {
     adults,
     children,
     camping,
-    favouriteSong
+    favoriteSong
   };
   Guest.create(data).then(response => {
     res.render("success");
