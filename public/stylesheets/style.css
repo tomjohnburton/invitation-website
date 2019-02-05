@@ -8,12 +8,10 @@ body {
   color: #f4f4f4;
   height: 100vh; }
 
-@media only screen and (min-width: 600px) {
-  html,
-  body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden; } }
+.scrollblock {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; }
 
 a {
   color: #00b7ff; }

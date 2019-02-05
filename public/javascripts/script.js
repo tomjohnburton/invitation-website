@@ -1,5 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
+    console.log("IronGenerator JS imported successfully!");
 
-  console.log('IronGenerator JS imported successfully!');
-
-}, false);
+    if (document.getElementsByClassName("main").length === 1) {
+      document.body.classList.add("scrollblock");
+      console.log("block");
+    }
+  },
+  false
+);
