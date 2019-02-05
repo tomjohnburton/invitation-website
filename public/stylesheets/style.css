@@ -8,11 +8,12 @@ body {
   color: #f4f4f4;
   height: 100vh; }
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden; }
+@media only screen and (min-width: 600px) {
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden; } }
 
 a {
   color: #00b7ff; }
@@ -83,14 +84,15 @@ td {
       left: 24%; }
       @media only screen and (max-width: 600px) {
         .invitation-page .text .date {
-          top: 35%; } }
+          top: 35%;
+          font-size: 1.4rem; } }
     .invitation-page .text h1 {
       font-size: 3rem;
       text-align: center;
       margin: 0; }
       @media only screen and (max-width: 600px) {
         .invitation-page .text h1 {
-          font-size: 1.9rem; } }
+          font-size: 1.7rem; } }
       .invitation-page .text h1 a {
         text-decoration: none;
         color: red; }

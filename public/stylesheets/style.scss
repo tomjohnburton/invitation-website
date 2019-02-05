@@ -9,11 +9,13 @@ body {
   height: 100vh;
 }
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
+@media only screen and (min-width: 600px) {
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 a {
@@ -103,6 +105,7 @@ td {
       left: 24%;
       @media only screen and (max-width: 600px) {
         top: 35%;
+        font-size: 1.4rem;
       }
     }
 
@@ -112,7 +115,7 @@ td {
       margin: 0;
 
       @media only screen and (max-width: 600px) {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
       }
       a {
         text-decoration: none;
