@@ -10,8 +10,23 @@ router.get("/rsvp", (req, res, next) => {
 });
 
 router.post("/save-details", (req, res, next) => {
-  const { name, daysAttending, extraGuests, camping } = req.body;
-  const data = { name, daysAttending, extraGuests, camping };
+  console.log(req.body);
+  const {
+    name,
+    daysAttending,
+    adults,
+    children,
+    camping,
+    favouriteSong
+  } = req.body;
+  const data = {
+    name,
+    daysAttending,
+    adults,
+    children,
+    camping,
+    favouriteSong
+  };
   Guest.create(data).then(response => {
     res.render("success");
   });

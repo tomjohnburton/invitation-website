@@ -5,7 +5,14 @@
 body {
   font: 14px "Octarine";
   font-family: Octarine;
-  color: #f4f4f4; }
+  color: #f4f4f4;
+  height: 100vh; }
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; }
 
 a {
   color: #00b7ff; }
@@ -47,16 +54,21 @@ td {
   color: red;
   display: flex;
   align-items: center;
-  font-weight: 900; }
+  font-weight: 900;
+  background-image: url("/images/card.jpg");
+  background-size: cover;
+  object-fit: cover; }
   .invitation-page .text {
-    background-image: url("/images/card.jpg");
-    background-size: cover;
-    object-fit: cover;
     background-repeat: no-repeat;
     display: flex;
     height: 100vh;
+    width: 100%;
+    align-items: center;
     justify-content: space-between;
     flex-direction: column; }
+    .invitation-page .text .header {
+      display: flex;
+      align-items: center; }
     .invitation-page .text .date {
       position: absolute;
       top: 22%;
@@ -69,12 +81,26 @@ td {
         text-decoration: none;
         color: red; }
     .invitation-page .text .info {
-      width: 250px;
+      width: 350px;
       position: absolute;
       right: 10%;
       top: 30%; }
+      .invitation-page .text .info h3 {
+        font-size: 2.5rem; }
 
 .form-check-input {
   margin-top: 0; }
+
+td,
+th {
+  width: 200px;
+  font-size: 1rem; }
+  td p,
+  th p {
+    font-size: 1rem; }
+
+.table td,
+.table th {
+  vertical-align: center !important; }
 
 /*# sourceMappingURL=style.css.map */

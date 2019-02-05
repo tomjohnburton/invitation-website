@@ -4,9 +4,11 @@ const Schema = mongoose.Schema;
 const GuestSchema = new Schema(
   {
     name: String,
-    extraGuests: { type: Number, default: 0 },
+    adults: { type: Number, default: 0 },
+    children: { type: Number, default: 0 },
     daysAttending: Array,
-    camping: String
+    camping: String,
+    favoriteSong: String
   },
   {
     timestamps: {
