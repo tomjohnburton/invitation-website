@@ -52,7 +52,8 @@ a {
 
 td {
   padding: 10px 0;
-  text-align: center; }
+  text-align: left;
+  height: 130px; }
   td p {
     margin: 10px 40px; }
 
@@ -99,6 +100,9 @@ td {
       text-align: center;
       right: 10%;
       top: 30%; }
+      @media only screen and (max-width: 1700px) {
+        .invitation-page .text .info {
+          right: 4%; } }
       @media only screen and (max-width: 600px) {
         .invitation-page .text .info {
           top: 50%;
